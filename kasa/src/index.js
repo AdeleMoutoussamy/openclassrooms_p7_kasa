@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import './index.css';
+import './index.scss';
 
 import Header from './components/header/header';
 import Home from './pages/home/home';
