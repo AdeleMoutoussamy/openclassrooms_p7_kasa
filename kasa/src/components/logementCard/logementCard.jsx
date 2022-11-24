@@ -1,13 +1,14 @@
-import "./logementCard.scss";
+import React from "react"
 
-function LogementCard(cover, title)
-{
+import "./logementCard.scss"
+
+const LogementCard = ({ cover, title }) => {
   return (
     <article className="article">
       <img className="article__image" src={cover} alt="Appartement" />
       <div className="article__title">{title}</div>
     </article>
-  );
+  )
 }
 
-export default LogementCard;
+export default LogementCard
