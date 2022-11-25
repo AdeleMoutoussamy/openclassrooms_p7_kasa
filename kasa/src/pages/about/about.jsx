@@ -1,17 +1,15 @@
-import "./about.scss";
+import "./about.scss"
 
-import BannerAbout from "../../components/bannerAbout/bannerAbout";
-import Collapse from "../../components/collapse/collapse";
+import BannerAbout from "../../components/bannerAbout/bannerAbout"
+import Collapse from "../../components/collapse/collapse"
 
-import bannerAboutImg from "../../assets/img/bannerAboutImg.jpg";
-import dataAbout from "../../assets/data/dataAbout.json";
+import bannerAboutImg from "../../assets/img/bannerAboutImg.jpg"
+import dataAbout from "../../assets/data/dataAbout.json"
 
 // Composant "About" pour la page À propos.
-function About()
-{
+const About = () => {
   return (
     <div className="about">
-
       <BannerAbout picture={bannerAboutImg} />
       <div className="about__dropdown">
         {dataAbout.map((dataA, index) =>
@@ -21,9 +19,8 @@ function About()
           );
         })}
      </div>
-
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

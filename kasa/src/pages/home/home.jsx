@@ -11,7 +11,7 @@ import bannerImg from "../../assets/img/bannerImg.jpg"
 
 import { Link } from "react-router-dom"
 
-// Composant fonction "Home" pour la page d'Accueil.
+// Composant "Home" pour la page d'Accueil.
 const Home = () => {
   const bannerTitle = "Chez vous, partout et ailleurs"
   return (

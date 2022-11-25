@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
-import "./header.scss";
+import "./header.scss"
 
-import Logo from "../logo/logo";
+import Logo from "../logo/logo"
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <Link 
@@ -20,7 +20,6 @@ function Header() {
         to="/">
           Accueil
         </Link>
-
         <Link 
         className="nav-link" 
         to="about">
@@ -28,7 +27,7 @@ function Header() {
         </Link>
       </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

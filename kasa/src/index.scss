@@ -19,39 +19,6 @@ a
   padding: 0;
 }
 
-h1
-{
-  margin: 0;
-  padding: 0;
-}
-
-h2
-{
-  margin: 0;
-  padding: 0;
-}
-
-button
-{
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-
-}
-
 p
 {
   margin: 0;

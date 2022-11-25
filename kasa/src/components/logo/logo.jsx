@@ -1,4 +1,4 @@
-function Logo({ fill, className }) {
+const Logo = ({ fill, className }) => {
     return (
       <svg
         width="211"
@@ -29,7 +29,7 @@ function Logo({ fill, className }) {
           fill={fill}
         />
       </svg>
-    );
-  }
+    )
+}
   
-  export default Logo;
+export default Logo
