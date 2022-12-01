@@ -1,5 +1,7 @@
 // J'importe useParams qui va me permettre de récupérer l'id des paramètres de l'URL actuelle qui ont été mis en correspondance par la <Route path="/details/:id" element={<Details />} />.
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
+
+import "./details.scss"
 
 import data from "../../assets/data/logements.json"
 
@@ -9,16 +11,16 @@ import Rate from "../../components/Rate/rate"
 import HostName from "../../components/hostname/hostname"
 import Collapse from "../../components/collapse/collapse"
 
-
-
-
-
 const Logement = () => {
   // Je récupère l'id dans la constante "productId".
-  const { productId } = useParams()
+  const { id } = useParams()
 
   // Je map "data" pour récupèrer l'Appartement et ses caractéristiques qui a pour id celui renseigné dans les paramètres d'url
-  const logement = data.find((logement) => logement.id === productId)
+  const logement = data.find((logement) => logement.id === id)
+
+  if ( logement === undefined) {
+    return <Navigate to ="*" />
+  }
 
   // Permet directement de déclarer une variable et de lui assigner la valeur d'une propriété d'un objet
   const { title, pictures, description, host, rating, location, equipments } = logement
@@ -26,7 +28,7 @@ const Logement = () => {
   return (
     <section className="logement">
 
-      <Carrousel props={pictures} />
+      <Carrousel pictures={pictures} />
         <div className="logement__content">
           <div className="logement__infos">
             <h1 className="logement__title">{title}</h1>

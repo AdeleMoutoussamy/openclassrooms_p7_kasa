@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 import "./errors.scss"
+
 // Composant "Errors" pour la page d'Erreur.
 const Errors = () => {
   return (
