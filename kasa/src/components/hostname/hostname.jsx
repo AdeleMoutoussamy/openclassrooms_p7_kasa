@@ -1,3 +1,5 @@
+import "./hostname.scss"
+
 const HostName = ({ host }) => {
   // Je split autour des espaces
   const hostSplitName = host.name.split(" ")
@@ -11,7 +13,7 @@ const HostName = ({ host }) => {
         <p>{lastname}</p>
       </div>
 
-      <img src={host.picture} alt="" className="host__picture" />
+      <img src={host.picture} alt="propriétaire" className="host__picture" />
     </div>
   )
 }
