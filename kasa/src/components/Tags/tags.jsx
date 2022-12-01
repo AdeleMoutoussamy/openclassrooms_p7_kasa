@@ -1,3 +1,5 @@
+import "./tags.scss"
+
 const Tags = ({ getTag }) => {
   return (
     <div className="tag">

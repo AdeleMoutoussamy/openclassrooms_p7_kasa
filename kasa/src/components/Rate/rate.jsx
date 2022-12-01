@@ -1,3 +1,5 @@
+import "./rate.scss"
+
 import redStar from "../../assets/img/redStar.svg"
 import greyStar from "../../assets/img/greyStar.svg"
 
@@ -14,14 +16,14 @@ const Rate = (props) => {
             key={star.toString()}
             className="rating__icon"
             src={redStar}
-            alt=""
+            alt="étoile plus"
           />
         ) : (
           <img
             key={star.toString()}
             className="rating__icon"
             src={greyStar}
-            alt=""
+            alt="étoile moins"
           />
         )
       )}
